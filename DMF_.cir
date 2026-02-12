@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE CIR>
+<CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Circuit ameApplication="AMESim" execVersion="202510000" highestId="28441">
+  <Comps>
+   <Comp alias="omegacon" circuitScopeId="920" depth="204" displayName="omegacon" geometry="8" iconDescription="" labelVisible="0" libraryId="meca.omegacon" name="omegacon" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="427" y="189"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQ5IiB5PSIxMyI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJyc2hhZnQiIHg9IjEiIHk9IjEzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcnNoYWZ0MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCrWTzY7TMBSF9/MUV2YRkCY/dpJCqrojWLBiwWJYVyF1UmtcO7JNk/IGPB2vxHXSVCogMUKQja+Pb/ydYyebh/Go4CSsk0bziCZZBEI3Zi91x6NPj+/jN9HD9m7jTh1gp3acHLzv12k6DEMy5ImxXcqyLEuxg8wt61FJ/fS7RlpVVTqtkiuT0IQR+Fw78dGaVirBiZf6TEDuOfkgT0Ips6O4NSdZPxI4X8ZB7v2BE1aGyUHI7uA5KaowO0kxvDPhBciAlVBUBAzyWmUGTlxjjVKT17Xr6waBvRVO2JMgmLTb3gHAppG2UQLQkOJEGy0IOG/NE3a/yKZnEeLFyVU4Si+skjhgOuxr0AplSYkVumdFqOy0lM4wL0YP3tbatcYeOTnW3srx5SqhLGd5IWL6GmIKFG4UuoI8e0WgNdrHbX2UCneP3lpZq+iiOvkVDdMCT2X7/dsmDSDMmHYh6HTCzRfnd3TnZKdrRWY7eEHPS/5z0JEuQc80XAYq7Kpgla+WxL1R57/G9EZqj19idV9kSQlh//u8DNVqViBgfknJdtYd6tb/25R5KG5jXu/12Yg/fkKBWc1AeuFV/xVGV7e0ab7g5qMNv/z2B8HeJBxBBAAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="49" y="13"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="3" port="0"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="rshaft">
+      <Pos x="1" y="13"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="8" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasNoCalc="1" hasTerminate="1" idMax="4" idsReset="0" label="conversion of signal to a rotary speed in rev/min" name="OMEGC0" needsUpdateCheck="1" outputType="1" type="0" unit="1">
+     <ParamsGroups>
+      <Group circuitScopeId="28306" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="4">
+       <Elements>
+        <Element display="1" varName="input"/>
+        <Element display="1" varName="omega"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28304" dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="input" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="rshaft">
+       <Vars>
+        <Var circuitScopeId="28305" express2="@_1_1" saveValue="1" subId="3" title="rotary speed output" type="7" units="rev/min" varName="omega" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="signal01" circuitScopeId="940" depth="202" displayName="signal01" geometry="8" iconDescription="" labelVisible="0" libraryId="sig.signal01" name="signal01" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="223" y="95"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJzaWduYWwiIHg9IjE1IiB5PSI0MCI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCp1SsW7jMAzd+xUEO2RxZEmOr3EQpUCHm67ADXdzkDqqLVSVDEm1nb8vbSfX5aZKwyOpJ5JP1P5xfLfQ6xCNd2olGF+BdrU/G9eo1d8/P9fb1ePhbh/7BojposI2pW6X58MwsKFgPjS55JznxMCFshutcW//I4qqqvL5FP/VRMEkwssp6t/BvxqrFSbjLgjmrPCX6bW1/igotULejQiXKw7mnFqFm9lptWnapFBWk9cbPTz56QJw2HCQFYKneq/WDwpjHby1c6+72J1qKtgFHXXoNZLS5nAHAPvahNpqoIasQuedRogp+Ddi3/N53QLrd5N0sIaAxFC4pspiw0qyLjcrTAbmS+7ulNpvZaYXeX5gZSbKmme0WbmuyC0WjISZ5NmPGeJmLYiQLTCV3ufNpG9+2PojpqM4RtO4k8WlLZrL9wSPQmFR0GjETe4op8lQRF4jN+XeXhrvoPPGJfpLcpsJwUooJBPZRIQp8nDFLdtCUbDq64QzCfClZfp0h09L14bfwwIAAA==" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="signal">
+      <Pos x="15" y="40"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="2" port="1"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="63" idsReset="0" label="sine signal source" name="SIN0" needsUpdateCheck="1" outputType="1" rStoresNumber="2" timeRequired="1" type="0" unit="0">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="28312" defValue="1" historyVariable="f0GEN" maxValue="1e+06" minValue="1e-06" paramImage="${library_node}/embedded_files/images/SIN0_period.png" subId="2" title="sine wave frequency" tunable="True" units="Hz" value="vel/60*(H)" varName="f" visibility="True"/>
+       <Param circuitScopeId="28313" defValue="0" historyVariable="level00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/SIN0_level0.png" subId="3" title="mean level" tunable="True" units="null" value="0" varName="level0" visibility="True"/>
+       <Param circuitScopeId="28314" defValue="1" historyVariable="a0GEN" maxValue="1e+30" minValue="0" paramImage="${library_node}/embedded_files/images/SIN0_amplitude.png" subId="4" title="sine wave amplitude" tunable="True" units="null" value="60*vel/(30/pi)*H" varName="a" visibility="True"/>
+       <Param circuitScopeId="28315" defValue="0" historyVariable="phi0GEN" maxValue="360" minValue="-360" paramImage="${library_node}/embedded_files/images/SIN0_phase.png" subId="5" title="phase shift" tunable="True" units="degree" value="90" varName="phi" visibility="True"/>
+      </Params>
+     </RealParams>
+     <ParamsGroups>
+      <Group circuitScopeId="28321" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="63">
+       <Elements>
+        <Element display="0" varName="f"/>
+        <Element display="0" varName="level0"/>
+        <Element display="0" varName="a"/>
+        <Element display="0" varName="phi"/>
+        <Element display="1" varName="output"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="28316" defValue="1" dimension="1" maxValue="1e+06" minValue="1e-06" saveValue="1" subId="59" title="sine wave frequency - Linked variable" type="10" units="Hz" value="1" varName="f0GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28317" defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="60" title="mean level - Linked variable" type="10" units="null" value="0" varName="level00GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28318" defValue="1" dimension="1" maxValue="1e+30" minValue="0" saveValue="1" subId="61" title="sine wave amplitude - Linked variable" type="10" units="null" value="1" varName="a0GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28319" defValue="0" dimension="1" maxValue="360" minValue="-360" saveValue="1" subId="62" title="phase shift - Linked variable" type="10" units="degree" value="0" varName="phi0GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28320" dimension="1" io="2" saveValue="1" subId="1" title="sine wave output" type="0" units="null" varName="output" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="elect01_1" circuitScopeId="941" depth="203" displayName="elect01" geometry="8" iconDescription="" labelVisible="0" libraryId="sig.elect01" name="elect01" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="228" y="135"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJzaWduYWwiIHg9IjEwIiB5PSI0OSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIwIiB0eXBlPSJzaWduYWwiIHg9IjEwIiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCq2TwY6bMBCG7/sUI++BVtoYbBIaopBVe+iphx7ac0SJIVaMjWwXSJ++YyebRuoeVlW5DB6P5/+/MWyf517BKKyTRlcJo1kCQjfmIHVXJd+/fV6sk+fdw9aNHWCldhU5ej9s0nSaJjrl1Ngu5VmWpVhBLiWbWUl9eq2QlWWZxl1y0ySMcgI/aie+WtNKJSripT4TkIeKfJGjUMrsGbauSDbMBM7XOMmDP1ZkWYbFUcju6LFXXI1STJ9MOAAZLEtgJQGDeq0yU0VcY41S0evGDXWDgoMVTthRECTtdg8AsLWi8UGTfaCrKMpCRH+qIo9tfAg4b80Jzz9m8XlJLHrphVUSA57Lbl7Z6s5pQdKLkhezB29r7Vpj+4r0tbdyfscguGfAObCcrt6juNF+0da9VGgn+WhlrZJr1slfaINxpN+dtmloiShpF3jiIJufzu/53slO14pchPEexJVIGy3ejjMzHC0OBUMZpjLzyANnfklcwQajzv+sMRipPX5tDOf+VAArMGBviGuWAwSVvwjZfyTMLzd/D7ksX4XsjL75zXnwi0bzghbRccwwfnvL6RryNV3+2VxRfs8TfqXdb/FkeD2ZAwAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="signal">
+      <Pos x="10" y="49"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="7" port="0"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="signal">
+      <Pos x="10" y="1"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="1" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="16" idsReset="0" label="gain" name="GA00" needsUpdateCheck="1" outputType="1" type="0" unit="1">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="28307" defValue="1" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="value of gain" tunable="True" units="null" value="pi/180*30/pi" varName="k" visibility="True"/>
+      </Params>
+     </RealParams>
+     <ParamsGroups>
+      <Group circuitScopeId="28311" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="16">
+       <Elements>
+        <Element display="0" varName="k"/>
+        <Element display="1" varName="output"/>
+        <Element display="1" varName="input"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="28308" defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="15" title="value of gain - Linked variable" type="10" units="null" value="0" varName="k0GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28309" dimension="1" io="2" saveValue="1" subId="9" title="output from gain" type="0" units="null" varName="output" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28310" dimension="1" io="1" saveValue="1" subId="2" title="input to gain" type="0" units="null" varName="input" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="control14" circuitScopeId="976" depth="205" displayName="control14" geometry="5" iconDescription="" labelVisible="0" libraryId="sig.control14" name="control14" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="476" y="186"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjE2Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjMiIHR5cGU9InNpZ25hbCIgeD0iNDkiIHk9IjE2Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCq1TwXLbIBC95yt2yEHtNJYElh3jEc60h556yKE9e1QbyUwwaIBKcr++i6w4nTYHp1MuC8vue2/nQfkwHDV00nlljUhomicgzc7ulWlE8u3r59kqedjclL5rACuNF+QQQrvOsr7v036eWtdkLM/zDCvIuWQ9aGWeXiuknPNsvCUXTkJTRuB75eWjs7XSUpCgzImA2gvyRXVSa7ulCC1I3g4ETlPs1T4cBCl4PBykag5BkDmNp07J/pONDZBDwWGO7Rb5am17QfzOWa1HrWvfVjskbJ300nWS4KTN5gYASid3IXKu0sXISWNEeVqQ23pcBHxw9gnbb/NxPSdmRxWk0woD9uUXqXP2IpStSHYmCnIIEFxlfG3dUZBjFZwa3lGI4inQIl0AvU8X75HemjCrq6PSKCj56FSlkynr1U8UQhmOv/lQZhH0KnjGgeVvAZ+9BZxF7fx68OwZvMyaaMX4BnY/fNiyrVeNqTQ5E+MTkpMbxhp5vRUDxVeBhmKgi2jpwARZjh6zKTX50lp9+mea1ioT8K+wO8rg/i7iAu45QIT/azr6H6crln+OV/DXp2usuQgtKCpFkcUipWe5MbOaIk9XUCxT/nKDn/b3WeLv3/wCeCNpRUwEAAA=" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="16"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="0" port="0"/>
+      </Connects>
+     </Port>
+     <Port connect="2" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="49" y="16"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="0" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="3" idsReset="0" label="reverses the sign of the input" name="SGN10" needsUpdateCheck="1" outputType="1" type="0" unit="1">
+     <ParamsGroups>
+      <Group circuitScopeId="28341" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="3">
+       <Elements>
+        <Element display="1" varName="inp"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28339" dupType="1" primaryPort="1" primaryVar="0" saveValue="1" subId="1" title="input signal at port 2" type="4" varName="outp" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28340" dimension="1" io="1" saveValue="1" subId="2" title="input signal at port 2" type="0" units="null" varName="inp" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="control04" circuitScopeId="921" depth="207" displayName="control04" geometry="7" iconDescription="" labelVisible="0" libraryId="sig.control04" name="control04" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="191" y="186"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjMxIiB5PSIxNiI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJzaWduYWwiIHg9IjE2IiB5PSIzMSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjE2Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCq1UPW/bMBDd8ysO7OBFoUgqaiTDcoAOnTp0aGfDkRmZCEMKpKqPf9+jPhwjcZdCgoDjPZ7u3bsjtXvq3zS00nllTbHhlG1AmtKelKmKze9f3++zzdP+bufbCjDS+IKcm6bexnHXdbRLqHVVLBhjMUaQKWTba2VebwXyPM/jcZdcOAmngsDz0cufzr4oLQvSKDMQUKeC/FCt1NoeOKYuCKt7AsNsO3VqzgVJeHDOUlXnZvFaJbtvNnwADBKOLwGLfC/adgXxpbNaj7VufX0skbB20kvXSoJKq/0dAOywSAlYji6IsUYS8I2zrxj7hY3PAty/qUY6rdCgFIR7jhYVDWgzmiIgEMgREBMQr0AgRMg8zFSBYUYmrpUp0kVGduFIVxIy5R57NXcqvcVRKldqCWW/BJTDsnLhBI2Bu7gK8xsPTvnHN4fk4FVljpqsUCj71IvPVdZWD/9NUltlGrxeCU0jLiALBnPD6OcANxWKFRW+j+Lh4yjYtcLKmkuxHA9JlEOIjB4oLrLJz2m2wAnlwPGOR//SwFfUIB4/jinc/VtzulYhRBSEgPhK+dT0gGSzRS0gHmn+voNqrrWEX9/+L7mnfsNJBQAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="31" y="16"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="7" port="2"/>
+      </Connects>
+     </Port>
+     <Port connect="2" decorationOrientation="0" decorationVisible="0" face="1" name="" type="signal">
+      <Pos x="16" y="31"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="0" port="1"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="16"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="6" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="4" idsReset="0" label="splitter junction" name="SPLT0" needsUpdateCheck="1" outputType="1" type="0" unit="0">
+     <ParamsGroups>
+      <Group circuitScopeId="28328" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="4">
+       <Elements>
+        <Element display="1" varName="in3"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28325" dupType="0" primaryPort="2" primaryVar="0" saveValue="1" subId="1" title="input to junction" type="4" varName="out1" visibility="True"/>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28326" dupType="0" primaryPort="2" primaryVar="0" saveValue="1" subId="2" title="input to junction" type="4" varName="out2" visibility="True"/>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28327" dimension="1" io="1" saveValue="1" subId="3" title="input to junction" type="0" units="null" varName="in3" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="omegacon_1" circuitScopeId="924" depth="201" displayName="omegacon" geometry="2" iconDescription="" labelVisible="0" libraryId="meca.omegacon" name="omegacon" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="253" y="189"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjEzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjMiIHR5cGU9InJzaGFmdCIgeD0iNDkiIHk9IjEzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcnNoYWZ0MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCrWTzY7TMBSF9/MUV2YRkCY/dpJCqrojWLBiwWJYVyF1UmtcO7JNk/IGPB2vxHXSVCogMUKQja+Pb/ydYyebh/Go4CSsk0bziCZZBEI3Zi91x6NPj+/jN9HD9m7jTh1gp3acHLzv12k6DEMy5ImxXcqyLEuxg8wt61FJ/fS7RlpVVTqtkiuT0IQR+Fw78dGaVirBiZf6TEDuOfkgT0Ips6O4NSdZPxI4X8ZB7v2BE1aGyUHI7uA5KaowO0kxvDPhBciAlVBUBAzyWmUGTlxjjVKT17Xr6waBvRVO2JMgmLTb3gHAppG2UQLQkOJEGy0IOG/NE3a/yKZnEeLFyVU4Si+skjhgOuxr0AplSYkVumdFqOy0lM4wL0YP3tbatcYeOTnW3srx5SqhLGd5IWL6GmIKFG4UuoI8e0WgNdrHbX2UCneP3lpZq+iiOvkVDdMCT2X7/dsmDSDMmHYh6HTCzRfnd3TnZKdrRWY7eEHPS/5z0JEuQc80XAYq7Kpgla+WxL1R57/G9EZqj19idV9kSQlh//u8DNVqViBgfknJdtYd6tb/25R5KG5jXu/12Yg/fkKBWc1AeuFV/xVGV7e0ab7g5qMNv/z2B8HeJBxBBAAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="13"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="7" port="1"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="rshaft">
+      <Pos x="49" y="13"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="8" port="1"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasNoCalc="1" hasTerminate="1" idMax="4" idsReset="0" label="conversion of signal to a rotary speed in rev/min" name="OMEGC0" needsUpdateCheck="1" outputType="1" type="0" unit="1">
+     <ParamsGroups>
+      <Group circuitScopeId="28324" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="4">
+       <Elements>
+        <Element display="1" varName="input"/>
+        <Element display="1" varName="omega"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28322" dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="input" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="rshaft">
+       <Vars>
+        <Var circuitScopeId="28323" express2="@_1_1" saveValue="1" subId="3" title="rotary speed output" type="7" units="rev/min" varName="omega" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="constant_1" circuitScopeId="978" depth="206" displayName="constant" geometry="1" iconDescription="" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="151" y="187"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCo1SwY7bIBC95ytGswe30gYbO6vaUchqe+iphx7ac+Q62EHBYAFrO/36Do7TXnooQprh8XgzDzi8zr2GUTqvrBEJZ1kC0jT2rEwnkh/fv2zL5PW4OfixA2IaL/ASwrBP02ma2FQw67o0z7IsJQbeKftZK3P9F5FXVZUuu/inJnKWI/ysvfzmbKu0FBiUuSGos8CvapRa2xMnaYHZMCPc1jipc7gI3C2Li1TdJQjMq7galZw+23gAMthlkFcIluq12k4CfeOs1kuvez/UDRUcnPTSjRLJaXfcAMChUa7REqghLfCpXQaCD85e6cBTtowHsO1VkE4rCuSH4IaK8x17oez2yFxMML3LBzkHCK42vrWuF9jXwan5A4fYMgdOs2R5seMfEVprwrate6VJK3lzqtbJinr1S0ZZcn28HtKoShbSLvpYLrB59+HET151ptZ4r033/zBmrJH/72rmAouCnoA/PM15fAFC8hVZ7Q1W3zprYLDKBPozefnMOXuBImf8ORIhIp/WWLISioJVf3cylgNEsbuX+LmOm9+vXzT5rAIAAA==" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="40" y="15"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="4" port="2"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="29" idsReset="0" label="constant signal" name="CONS00" needsUpdateCheck="1" outputType="1" type="0" unit="1">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="28333" defValue="1" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" value="vel" varName="k" visibility="True"/>
+      </Params>
+     </RealParams>
+     <ParamsGroups>
+      <Group circuitScopeId="28336" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="29">
+       <Elements>
+        <Element display="0" varName="k"/>
+        <Element display="1" varName="out"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="28334" defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="28" title="constant value - Linked variable" type="10" units="null" value="0" varName="k0GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28335" dimension="1" io="2" saveValue="1" subId="24" title="output" type="0" units="null" varName="out" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="sum" circuitScopeId="979" depth="208" displayName="sum" geometry="7" iconDescription="summing junction" labelVisible="0" libraryId="sig.sum" name="sum" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="222" y="184"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIwIiB0eXBlPSJzaWduYWwiIHg9IjE2IiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjMiIHR5cGU9InNpZ25hbCIgeD0iMzEiIHk9IjE4Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjIiIHR5cGU9InNpZ25hbCIgeD0iMSIgeT0iMTgiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCq1UTY/TMBC991eMZg8B0SaxSz9S1V3BgRMHDnCuQuqk1rp2ZZsm5dczTtNlgUVaUKNIfh47782bsbO+7w4aTtJ5ZY1IWJonIE1ld8o0Ivny+cNkmdxvRmt/aoB2Gi9wH8JxlWVt26btNLWuyXie5xntwMuWVaeVeXhuIyuKIutX8VETWcoRvpZefnK2VloKDMqcEdRO4Ed1klrbLSNqgfmxQzgPY6t2YS9wyuJkL1WzD9fZScn2vY0fQA5TRi+CJb1a21agr5zVus915Y9lRYJHJ710J4nktNmMAGBdKVdpCZSQFnhX9w+CD84+0Ad3ef9cA5ODCtJpRQP5oXBF4myWzghRvmwakRO4xOzCTiW4chtr5MuJOyawSJdUBgKLCDoukPc1PBNiBaGbivSMv6lE4UEkyC5AcKXxtXUHgYcyONW9YhBrz4Bz4MVrhNqaMKnLg9JUj+SdU6VOhqhX3ymnghq3ebPOIt+LmBks09m/M6+zJja5P13VNx+2061XjSk13qBo+VCyvt+xZPMI+r7E0FCyo9Xn/5Y5WmUC3UI+ZjksxpEXCC8AIv0f7vgN3fFF7+YXg/FqPeevseZnqjydUbYx0Xk6H1LuY/NHRCcK+DJ9+2SVzt1fTLEbmrrc0mgqWomWhgi/JH7TpjE+5guIAmO6GKyIsycW4z90M/oBSJeGDZMFAAA=" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="signal">
+      <Pos x="16" y="1"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="2" port="0"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="31" y="18"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="5" port="0"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="18"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="4" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="5" idsReset="0" label="summing junction" name="JUN3P" needsUpdateCheck="1" outputType="1" type="0" unit="1">
+     <ParamsGroups>
+      <Group circuitScopeId="28332" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="5">
+       <Elements>
+        <Element display="1" varName="input1"/>
+        <Element display="1" varName="output"/>
+        <Element display="1" varName="input3"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28329" dimension="1" io="1" saveValue="1" subId="1" title="input at port 1" type="0" units="null" varName="input1" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28330" express2="@_1_1+@_3_1" saveValue="1" subId="4" title="output from summing junction" type="7" units="null" varName="output" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="28331" dimension="1" io="1" saveValue="1" subId="3" title="input at port 3" type="0" units="null" varName="input3" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="DMF" circuitScopeId="980" depth="209" displayName="DMF" geometry="1" iconDescription="Dual Mass Flywheel" labelVisible="0" libraryId="tr.DMF" name="DMF" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="302" y="141"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJyc2hhZnQiIHg9IjEyNSIgeT0iNjEiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9yc2hhZnQxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMiIgdHlwZT0icnNoYWZ0IiB4PSIxIiB5PSI2MSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3JzaGFmdDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCrVZ247bNhB9z1cIykNeKC3vIoN1AjRAn1KgQNvnYKt4d40o9sJy99Kv75khJXu9GzTJ0gZs0tRozsyZC2n5/P3916G6XW7H1Wa9eKNa+aZarvvN59X6avHmrz9/bcKb9+9enY+3VxUk1+Oivt7tbt6end3d3bV3pt1sr860lPIMEnUSeXs/rNZfnhNUMcYzvlrPmLVqdV39fTEuf99uLlfDclHvVuuHulp9XtQfV7fLYdh8UlC9qOXNfV095PFu9Xl3jbu1o2/Xy9XV9Y6+8sXb1fLulw3dUskKInjLutoA83LY3C3qsd9uhoHtfTveXPQAvdkux+X2dlnD26t3r6qqOu9X235YVjBqWNTrzXpZV+Nuu/kC6deSX9NCk63R88LX1W65HVYYYBTkehjjaXygsXV1tV3UxmJylsBuLnbXGer1Jb9egAbqfgtREFAvhfKNMkLHRkd8AqxvTGuEbHzrG4l3bF2jWj80XdsJ5dr40WCUauhwkb5/ML61IkhhlOhkG2lMyhvlhTJJMz57ViygWECxgGJBiqGX9QD7Y4ApkqA8Q30IBjOrBOx1suWRVP/7DDEvjAGx4j0MVNK3qlethfcaBmowAKuYCU/8pEtGOHjdtQH+BIxmxGJgWUmMScgZIhDXYTR8DbDftaEnlSSq4XckanFTHPkqONHC9qpRDaLfBEgavm4IGNxCXAkwDLEIWP1H1KIjzAhtogtjhFGK7JbAUD2bAjs6jA54XavoPVJQYQOUdLBDQ8405FfAOn1aSFtgQlCRoYJG2+qxSQtMCtnWE0t0q6CbLNwNDS8mfTHRSB6Sp3TBsXSHRQ87KctgHOklsgOII/44D4kk8gWkcUZYKAltN+LDi8SLp8CMFjbxGiUr3ddx5lK6kUoH8k1r6UIUkj1W2cKO2Bk0sXOalHKGqgaW9+x2IouCh7LgGuCUytcMsQ5XQSG7bKYLTqRgUUKhaCStU555CEa8KVVUQ8nF2kmYg0b1hdsYXAnJ/EGOyG5sAhYKvFJyaqKUMBJPuAHZaTh2yFWOBmcWqgPRU5z+iPnIMaac5sipPpkI8xBWCHUsjHcOKaUn5QW7hLETlH9cUCmLnGC9pP+DRpVxYlguex415STdRLaSzX2qU05b+OIblGQql6QyJt6JB+JjBLHkBeWfJyN7KlIyOHJwQqodWmaHiVZBvQ5BFJR+gVOLY0cxHHEBjYkWqaUl5I47HJIOEtQpUFUEk7lxIpnMIRmgDG5N6Ze2F5phK/y+/eU47+7Vou467IYYVaDt5F4v6qBo9oCZNhns5SguoWg1o8iM4efd6+Uopp1wMkoXMkosiKJmlJBR/MSYKceYTBhmz1g3odhYCsX7jKJnlJgwnCvHmH/qS0bhQ0whFOeeoISJMV8ORT1hLOeYL5hjtptyzNiMMudYVyzHrJ1RfEaxM4ovhjLXi8n1EvSMUiyTTUwYVj7uL9zNSmH4yRNrcuXPNRlsMZQ5KjZHpZujEopFJeUvo8SMojJGV5CxOfYuM+a7jBJKomSMbqpJP2dYiKVR/Fz5LkwYBX3RGWXej928H6PTlKpJ04aEE1ybI2NDm/2JOBEVQ9Kkn5FYPyN1rc1Ipi0WHyunXIs64+BUmXFwlCvdaaKbIoQ+qhOOkjjSFds23XzQyJuAN+UPTXsUFae0ng+A/gQo2Rc3NzVdzhebMeRcPHsUWewIEL+Nok4RFxkeh18peZL4S3OcAEAqjxPDE9ZkLJ0C0T4THGlL58BzMHFy5vzsp58Bmh97BuimMJ1vl/2OHnOmg0nao44eCGYItnd65PnjTzWee4ihFH6BiYND/ctIZnV5a89HoWnp8Exf5seJm3psPjj6roz6+czo9+1i78MBVVPkokqBi98KnFb7uJnSRMMi/+Q3mv9hlP995nWfKT9upE82uMKY0y/ePSavHG52J/LysFUcd9cTORntYxfRZ0/Fa94zOJnmg5EPk6Pu4D+KzfBwtVlXN5vVejdSodGzLqWrPIkVPWERfE9Vfesup1kGqFWeepra46ndCxxMNU3l8ZQEbDieen5WN8n4vXiY7OM+f37Ffzb1/4y7T/rTdry+uNzVp2A69yufY6umfmVPE1g19ccu4WU4V6Y9muPeKB83xifUqlNSq7R77OzBdvMTDn8f5kHvnUKq3U/H9Hm39DHNe4hHRNMfsO/+A0HKw+jPHQAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="rshaft">
+      <Pos x="125" y="61"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="0" port="1"/>
+      </Connects>
+     </Port>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="rshaft">
+      <Pos x="1" y="61"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="5" port="1"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libtr/submodels" discontinuity="1" hasTerminate="1" idMax="155" idsReset="0" label="centrifuged arc springs" name="TRDMF01V01" needsUpdateCheck="1" outputType="1" pStoresNumber="3" rStoresNumber="5" timeRequired="1" type="0" unit="0">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="28342" defValue="0" maxValue="360" minValue="-360" subId="25" title="gap angle (at zero degree flange angle)" units="degree" value="0" varName="gap1" visibility="(autoinit == 1)"/>
+       <Param circuitScopeId="28343" defValue="160" maxValue="180" minValue="0" subId="26" title="total angle between primary flywheel stops" units="degree" value="160" varName="thetaG1" visibility="True"/>
+       <Param circuitScopeId="28344" defValue="160" maxValue="180" minValue="0" subId="60" title="total angle between flange stops" units="degree" value="160" varName="thetaG2" visibility="True"/>
+       <Param circuitScopeId="28345" defValue="155" maxValue="180" minValue="0" nbInGroup="nstage" origTitle="free length of the arc spring stage 1 1 1 1 1" origVarName="thetar0" subId="27" title="free length of the arc spring stage 1" units="degree" value="150" varName="thetar01" visibility="stagesOpt == 2"/>
+       <Param circuitScopeId="28346" defValue="155" maxValue="180" minValue="0" nbInGroup="__CLONE__" origTitle="free length of the arc spring stage 1 1 1 1 2" origVarName="thetar0" subId="27G1" title="free length of the arc spring stage 2" units="degree" value="115" varName="thetar02" visibility="stagesOpt == 2"/>
+       <Param circuitScopeId="28347" defValue="155" maxValue="180" minValue="0" nbInGroup="__CLONE__" origTitle="free length of the arc spring stage 1 1 1 1 3" origVarName="thetar0" subId="27G2" title="free length of the arc spring stage 3" units="degree" value="80" varName="thetar03" visibility="stagesOpt == 2"/>
+       <Param circuitScopeId="28348" defValue="0" maxValue="1e+30" minValue="-1e+30" subId="147" title="free play angle" units="degree" value="0" varName="freePlay" visibility="stagesOpt == 1"/>
+       <Param circuitScopeId="28349" defValue="30" maxValue="1e+30" minValue="0" nbInGroup="nstage-1" origVarName="stageWindup" subId="151" title="windup angle of stage 1" units="degree" value="30" varName="stageWindup1" visibility="stagesOpt == 1"/>
+       <Param circuitScopeId="28350" defValue="30" maxValue="1e+30" minValue="0" nbInGroup="__CLONE__" origVarName="stageWindup" subId="151G1" title="windup angle of stage 2" units="degree" value="30" varName="stageWindup2" visibility="stagesOpt == 1"/>
+       <Param circuitScopeId="28351" defValue="0" maxValue="1e+30" minValue="-1e+30" subId="155" title="initial angular velocity of elementary spring masses (synchronized)" units="rev/min" value="0" varName="omegainit" visibility="synchomega == 1"/>
+       <Param circuitScopeId="28352" defValue="2.5" maxValue="10000" minValue="0" nbInGroup="nstage" origVarName="kStage" subId="149" title="stiffness of stage 1" units="Nm/degree" value="2.5" varName="kStage1" visibility="stagesOpt == 1"/>
+       <Param circuitScopeId="28353" defValue="2.5" maxValue="10000" minValue="0" nbInGroup="__CLONE__" origVarName="kStage" subId="149G1" title="stiffness of stage 2" units="Nm/degree" value="2.5" varName="kStage2" visibility="stagesOpt == 1"/>
+       <Param circuitScopeId="28354" defValue="2.5" maxValue="10000" minValue="0" nbInGroup="__CLONE__" origVarName="kStage" subId="149G2" title="stiffness of stage 3" units="Nm/degree" value="2.5" varName="kStage3" visibility="stagesOpt == 1"/>
+       <Param circuitScopeId="28355" defValue="2.5" maxValue="10000" minValue="0" nbInGroup="nstage" origTitle="stiffness of arc spring stage 1 1 1 1 1" origVarName="k" subId="32" title="stiffness of arc spring stage 1" units="Nm/degree" value="3" varName="k1" visibility="stagesOpt == 2"/>
+       <Param circuitScopeId="28356" defValue="2.5" maxValue="10000" minValue="0" nbInGroup="__CLONE__" origTitle="stiffness of arc spring stage 1 1 1 1 2" origVarName="k" subId="32G1" title="stiffness of arc spring stage 2" units="Nm/degree" value="6" varName="k2" visibility="stagesOpt == 2"/>
+       <Param circuitScopeId="28357" defValue="2.5" maxValue="10000" minValue="0" nbInGroup="__CLONE__" origTitle="stiffness of arc spring stage 1 1 1 1 3" origVarName="k" subId="32G2" title="stiffness of arc spring stage 3" units="Nm/degree" value="100" varName="k3" visibility="stagesOpt == 2"/>
+       <Param circuitScopeId="28358" defValue="0.01" maxValue="1e+06" minValue="0" nbInGroup="nstage*(dampcalc==2)" subId="34" title="damping of arc spring stage" units="Nm/(rev/min)" value="0.01" varName="h" visibility="True"/>
+       <Param circuitScopeId="28359" defValue="0.05" maxValue="1" minValue="0" nbInGroup="(dampcalc==1)" subId="35" title="damping ratio of arc springs" units="null" value="0.8" varName="damp" visibility="True"/>
+       <Param circuitScopeId="28360" defValue="200" maxValue="5000" minValue="0" subId="36" title="mass of one arc spring" units="g" value="300" varName="m" visibility="massdis==1"/>
+       <Param circuitScopeId="28361" defValue="30" maxValue="1e+30" minValue="1e-30" nbInGroup="ns" origVarName="melem" subId="142" title="mass of elementary mass 1" units="g" value="30" varName="melem1" visibility="massdis==2"/>
+       <Param circuitScopeId="28362" defValue="30" maxValue="1e+30" minValue="1e-30" nbInGroup="__CLONE__" origVarName="melem" subId="142G1" title="mass of elementary mass 2" units="g" value="30" varName="melem2" visibility="massdis==2"/>
+       <Param circuitScopeId="28363" defValue="30" maxValue="1e+30" minValue="1e-30" nbInGroup="__CLONE__" origVarName="melem" subId="142G2" title="mass of elementary mass 3" units="g" value="30" varName="melem3" visibility="massdis==2"/>
+       <Param circuitScopeId="28364" defValue="30" maxValue="1e+30" minValue="1e-30" nbInGroup="__CLONE__" origVarName="melem" subId="142G3" title="mass of elementary mass 4" units="g" value="30" varName="melem4" visibility="massdis==2"/>
+       <Param circuitScopeId="28365" defValue="30" maxValue="1e+30" minValue="1e-30" nbInGroup="__CLONE__" origVarName="melem" subId="142G4" title="mass of elementary mass 5" units="g" value="30" varName="melem5" visibility="massdis==2"/>
+       <Param circuitScopeId="28366" defValue="0.01" maxValue="10000" minValue="0" subId="37" title="limit of penetration for full damping of contact" units="mm" value="0.01" varName="econt" visibility="True"/>
+       <Param circuitScopeId="28367" defValue="100" maxValue="1e+05" minValue="0" subId="38" title="total normal preload at 0rpm" units="N" value="100" varName="Fn0" visibility="True"/>
+       <Param circuitScopeId="28368" defValue="100" maxValue="500" minValue="0" subId="39" title="implementation radius of the arc springs" units="mm" value="100" varName="r" visibility="True"/>
+       <Param circuitScopeId="28369" defValue="0.001" maxValue="1e+30" minValue="1e-12" subId="121" title="sample time" units="s" value="0.001" varName="Ts" visibility="frictionmodel == 4"/>
+       <Param circuitScopeId="28370" defValue="0.01" maxValue="1" minValue="0" subId="40" title="stick velocity threshold" units="m/s" value="0.01" varName="vt" visibility="(frictionmodel == 1)||(frictionmodel == 3)"/>
+       <Param circuitScopeId="28371" defValue="1000000" maxValue="1e+12" minValue="100" subId="41" title="total contact stiffness for the elementary mass friction" units="N/m" value="1000000" varName="s0" visibility="(frictionmodel == 2)||(frictionmodel == 3)||(frictionmodel == 4)"/>
+       <Param circuitScopeId="28372" defValue="0.01" maxValue="1500" minValue="0" subId="42" title="Stribeck constant" units="m/s" value="0.01" varName="v0" visibility="(frictionmodel == 3)||(frictionmodel == 4)"/>
+       <Param circuitScopeId="28373" defValue="0.12" maxValue="1" minValue="0" subId="43" title="stiction (static) coefficient" units="null" value="0.1" varName="mu" visibility="(frictionmodel == 1)||(frictionmodel == 2)||(frictionmodel == 3)||(frictionmodel == 4)"/>
+       <Param circuitScopeId="28374" defValue="0.1" maxValue="1" minValue="0" subId="44" title="Coulomb (dynamic) friction coefficient" units="null" value="0.1" varName="mud" visibility="(frictionmodel == 3)||(frictionmodel == 4)"/>
+       <Param circuitScopeId="28375" defValue="0" maxValue="100" minValue="0" subId="45" title="coefficient of total viscous friction" units="N/(m/s)" value="0.02" varName="fh" visibility="True"/>
+       <Param circuitScopeId="28376" defValue="1" maxValue="5" minValue="1" subId="46" title="alpha coefficient for Stribeck" units="null" value="1" varName="alpha" visibility="(frictionmodel == 2)||(frictionmodel == 3)||(frictionmodel == 4)"/>
+       <Param circuitScopeId="28377" defValue="1" maxValue="1e+36" minValue="0" nbInGroup="((frictionmodel==3)||(frictionmodel==4))*(dampcalc==2)" subId="47" title="damping coefficient for the tangential compliance" units="N/(m/s)" value="1" varName="s1p" visibility="(frictionmodel == 1)||(frictionmodel == 2)||(frictionmodel == 3)||(frictionmodel == 4)"/>
+       <Param circuitScopeId="28378" defValue="1e-05" maxValue="1e+30" minValue="0" subId="118" title="hysteresis for contact detection" units="null" value="1e-05" varName="hysContact" visibility="True"/>
+       <Param circuitScopeId="28379" defValue="1e-05" maxValue="1e+30" minValue="0" subId="119" title="hysteresis for stage detection" units="null" value="1e-05" varName="hysStage" visibility="True"/>
+      </Params>
+     </RealParams>
+     <IntParams>
+      <Params>
+       <Param circuitScopeId="28380" defValue="1" maxValue="2" minValue="1" subId="140" title="mass distribution" value="1" varName="massdis" visibility="True">
+        <Enums>
+         <Enum string="equally spread"/>
+         <Enum string="user defined"/>
+        </Enums>
+       </Param>
+       <Param circuitScopeId="28381" defValue="2" maxValue="24" minValue="1" subId="48" title="number of arc springs" value="2" varName="nsprings" visibility="True"/>
+       <Param circuitScopeId="28382" defValue="2" maxValue="10" minValue="1" recompile="1" subId="49" title="number of stages in arc spring" value="3" varName="nstage" visibility="True"/>
+       <Param circuitScopeId="28383" defValue="10" maxValue="10000" minValue="1" recompile="1" subId="50" title="number of elementary masses per arc spring" value="5" varName="ns" visibility="True"/>
+       <Param circuitScopeId="28384" defValue="1" maxValue="5" minValue="1" recompile="1" subId="51" title="friction model" value="1" varName="frictionmodel" visibility="True">
+        <Enums>
+         <Enum string="tanh"/>
+         <Enum string="Dahl"/>
+         <Enum string="LuGre"/>
+         <Enum string="LuGre RT"/>
+         <Enum string="no friction"/>
+        </Enums>
+       </Param>
+       <Param circuitScopeId="28385" defValue="1" maxValue="2" minValue="1" subId="53" title="initialization step" value="1" varName="autoinit" visibility="True">
+        <Enums>
+         <Enum string="yes"/>
+         <Enum string="no"/>
+        </Enums>
+       </Param>
+       <Param circuitScopeId="28386" defValue="1" maxValue="2" minValue="1" subId="153" title="synchronize initial angular velocity of elementary spring masses" value="2" varName="synchomega" visibility="True">
+        <Enums>
+         <Enum string="yes"/>
+         <Enum string="no"/>
+        </Enums>
+       </Param>
+       <Param circuitScopeId="28387" defValue="1" maxValue="2" minValue="1" recompile="1" subId="54" title="spring damping" value="1" varName="dampcalc" visibility="True">
+        <Enums>
+         <Enum string="damping ratio"/>
+         <Enum string="damping value"/>
+        </Enums>
+       </Param>
+       <Param circuitScopeId="28388" defValue="1" maxValue="2" minValue="1" subId="144" title="stages definition" value="2" varName="stagesOpt" visibility="True">
+        <Enums>
+         <Enum string="stage stiffness and free play"/>
+         <Enum string="arc stiffness and free length"/>
+        </Enums>
+       </Param>
+      </Params>
+     </IntParams>
+     <ParamsGroups>
+      <Group circuitScopeId="28434" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="152">
+       <Elements>
+        <Element display="2" varName="flangeAngle"/>
+        <Element display="2" varName="frict"/>
+        <Element display="0" varName="massdis"/>
+        <Element display="0" varName="nsprings"/>
+        <Element display="0" varName="nstage"/>
+        <Element display="0" varName="ns"/>
+        <Element display="0" varName="frictionmodel"/>
+        <Element display="0" varName="autoinit"/>
+        <Element display="0" varName="synchomega"/>
+        <Element display="0" varName="stagesOpt"/>
+        <Element display="0" varName="gap1"/>
+        <Element display="0" varName="thetaG1"/>
+        <Element display="0" varName="thetaG2"/>
+        <Element display="0" varName="h"/>
+        <Element display="0" varName="m"/>
+        <Element display="0" varName="melem1"/>
+        <Element display="0" varName="melem2"/>
+        <Element display="0" varName="melem3"/>
+        <Element display="0" varName="melem4"/>
+        <Element display="0" varName="melem5"/>
+        <Element display="0" varName="Fn0"/>
+        <Element display="0" varName="r"/>
+        <Element display="1" varName="T1"/>
+        <Element display="1" varName="w1"/>
+        <Element display="1" varName="T2"/>
+        <Element display="1" varName="w2"/>
+        <Element display="1" varName="L"/>
+        <Element display="2" varName="frictRT_1"/>
+        <Element display="1" varName="sinT_1"/>
+        <Element display="1" varName="cosT_1"/>
+        <Element display="2" varName="L0_1"/>
+        <Element display="2" varName="contact2_1"/>
+        <Element display="2" varName="Kact_1"/>
+        <Element display="1" varName="totalCpower"/>
+        <Element display="1" varName="totalRpower"/>
+        <Element display="1" varName="totalIpower"/>
+        <Element display="2" varName="thetafly1"/>
+        <Element display="2" varName="thetaflyn"/>
+        <Element display="1" varName="thetaflange1"/>
+        <Element display="1" varName="thetaflangen"/>
+        <Element display="1" varName="thetamax1"/>
+        <Element display="1" varName="thetaminn"/>
+        <Element display="2" varName="contactE1"/>
+        <Element display="2" varName="contactEn"/>
+        <Element display="1" varName="Lspring_1"/>
+        <Element display="2" varName="friction"/>
+        <Element display="2" varName="stiffness"/>
+        <Element display="2" varName="states"/>
+        <Element display="2" varName="elemsprings"/>
+        <Element display="2" varName="advanced"/>
+        <Element display="2" varName="powers"/>
+       </Elements>
+      </Group>
+      <Group circuitScopeId="28435" editable="0" editableTitle="1" groupHeadIcon="" name="friction" origTitle="friction" subId="55">
+       <Elements>
+        <Element display="0" varName="mu"/>
+        <Element display="0" varName="mud"/>
+        <Element display="0" varName="vt"/>
+        <Element display="0" varName="s0"/>
+        <Element display="0" varName="v0"/>
+        <Element display="0" varName="alpha"/>
+        <Element display="0" varName="fh"/>
+        <Element display="0" varName="s1p"/>
+        <Element display="0" varName="Ts"/>
+       </Elements>
+      </Group>
+      <Group circuitScopeId="28436" editable="0" editableTitle="1" groupHeadIcon="" name="stiffness" origTitle="stiffness properties" subId="56">
+       <Elements>
+        <Element display="0" varName="dampcalc"/>
+        <Element display="0" varName="freePlay"/>
+        <Element display="0" varName="stageWindup1"/>
+        <Element display="0" varName="stageWindup2"/>
+        <Element display="0" varName="thetar01"/>
+        <Element display="0" varName="thetar02"/>
+        <Element display="0" varName="thetar03"/>
+        <Element display="0" varName="kStage1"/>
+        <Element display="0" varName="kStage2"/>
+        <Element display="0" varName="kStage3"/>
+        <Element display="0" varName="k1"/>
+        <Element display="0" varName="k2"/>
+        <Element display="0" varName="k3"/>
+        <Element display="0" varName="damp"/>
+        <Element display="0" varName="econt"/>
+       </Elements>
+      </Group>
+      <Group circuitScopeId="28437" editable="0" editableTitle="1" groupHeadIcon="" name="states" origTitle="elementary spring masses" subId="57">
+       <Elements>
+        <Element display="2" varName="theta_1"/>
+        <Element display="0" varName="omegainit"/>
+        <Element display="2" varName="omega_1"/>
+        <Element display="1" varName="Fn_1"/>
+        <Element display="1" varName="Ff_1"/>
+       </Elements>
+      </Group>
+      <Group circuitScopeId="28438" editable="0" editableTitle="1" groupHeadIcon="" name="elemsprings" origTitle="elementary spring stiffnesses" subId="58">
+       <Elements>
+        <Element display="1" varName="ang_1"/>
+        <Element display="1" varName="dang_1"/>
+        <Element display="1" varName="Fk_1"/>
+       </Elements>
+      </Group>
+      <Group circuitScopeId="28439" editable="0" editableTitle="1" groupHeadIcon="" name="advanced" origTitle="advanced" subId="113">
+       <Elements>
+        <Element display="0" varName="hysContact"/>
+        <Element display="0" varName="hysStage"/>
+       </Elements>
+      </Group>
+      <Group circuitScopeId="28440" editable="0" editableTitle="1" groupHeadIcon="" name="powers" origTitle="power, energy, activity" subId="87">
+       <Elements>
+        <Element display="1" varName="powerRglobal"/>
+        <Element display="2" varName="energyRglobal"/>
+        <Element display="2" varName="actRglobal"/>
+        <Element display="1" varName="powerCspring"/>
+        <Element display="2" varName="energyCspring"/>
+        <Element display="2" varName="actCspring"/>
+        <Element display="1" varName="powerImass"/>
+        <Element display="2" varName="energyImass"/>
+        <Element display="2" varName="actImass"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="28389" defValue="0" dimension="1" maxValue="180" minValue="-180" saveValue="1" subId="5" title="relative angle of the flange - primary wheel frame" type="1" units="degree" value="0" varName="flangeAngle" varName2="dflangeAngle" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28390" dimension="1" saveValue="1" subId="6" title="total angle between arc spring stops" type="0" units="degree" varName="L" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28391" defValue="0" dimExpression="ns" dimension="5" maxValue="1e+16" minValue="-1e+16" saveValue="1" subId="7" title="angular position of elementary spring mass - primary wheel frame" type="1" units="degree" varName="theta" varName2="dtheta" visibility="True">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>angular position of elementary spring mass - primary wheel frame</Title>
+         <Title>angular position of elementary spring mass - primary wheel frame</Title>
+         <Title>angular position of elementary spring mass - primary wheel frame</Title>
+         <Title>angular position of elementary spring mass - primary wheel frame</Title>
+         <Title>angular position of elementary spring mass - primary wheel frame</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28392" dimExpression="ns" dimension="5" saveValue="1" subId="8" title="normal force at elementary mass" type="0" units="N" varName="Fn" visibility="True">
+        <TitleList>
+         <Title>normal force at elementary mass</Title>
+         <Title>normal force at elementary mass</Title>
+         <Title>normal force at elementary mass</Title>
+         <Title>normal force at elementary mass</Title>
+         <Title>normal force at elementary mass</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28393" dimExpression="ns" dimension="5" saveValue="1" subId="9" title="friction force at elementary mass" type="0" units="N" varName="Ff" visibility="True">
+        <TitleList>
+         <Title>friction force at elementary mass</Title>
+         <Title>friction force at elementary mass</Title>
+         <Title>friction force at elementary mass</Title>
+         <Title>friction force at elementary mass</Title>
+         <Title>friction force at elementary mass</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28394" defValue="0" dimExpression="ns" dimension="5" maxValue="0" minValue="0" nbInGroup="frictionmodel==4" saveValue="1" subId="125" title="average bristle deflection RT * stiffness" type="10" units="Nm" unplottable="1" varName="znRT" visibility="false">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>average bristle deflection RT * stiffness</Title>
+         <Title>average bristle deflection RT * stiffness</Title>
+         <Title>average bristle deflection RT * stiffness</Title>
+         <Title>average bristle deflection RT * stiffness</Title>
+         <Title>average bristle deflection RT * stiffness</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28395" defValue="0" dimExpression="ns" dimension="5" maxValue="1e+30" minValue="-1e+30" nbInGroup="(frictionmodel==4)" saveValue="1" subId="138" title="friction state at elementary mass (used by RT friction model) " type="10" units="N" varName="frictRT" varName2="frictdot" visibility="True">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>friction state at elementary mass (used by RT friction model) </Title>
+         <Title>friction state at elementary mass (used by RT friction model) </Title>
+         <Title>friction state at elementary mass (used by RT friction model) </Title>
+         <Title>friction state at elementary mass (used by RT friction model) </Title>
+         <Title>friction state at elementary mass (used by RT friction model) </Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28396" defValue="0" dimExpression="ns*(frictionmodel>1)" dimension="0" maxValue="0" minValue="0" nbInGroup="(frictionmodel==2)||(frictionmodel==3)" saveValue="1" subId="10" title="friction state at elementary mass (used by friction model)" type="1" units="N" value="0" varName="frict" varName2="frictdot" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28397" defValue="0" dimExpression="ns" dimension="5" maxValue="1e+16" minValue="-1e+16" saveValue="1" subId="11" title="angular velocity of elementary spring mass - absolute frame" type="1" units="rev/min" varName="omega" varName2="domega" visibility="True">
+        <RValues>
+         <Value>vel</Value>
+         <Value>vel</Value>
+         <Value>vel</Value>
+         <Value>vel</Value>
+         <Value>vel</Value>
+        </RValues>
+        <TitleList>
+         <Title>angular velocity of elementary spring mass - absolute frame</Title>
+         <Title>angular velocity of elementary spring mass - absolute frame</Title>
+         <Title>angular velocity of elementary spring mass - absolute frame</Title>
+         <Title>angular velocity of elementary spring mass - absolute frame</Title>
+         <Title>angular velocity of elementary spring mass - absolute frame</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28398" dimExpression="ns+1" dimension="6" saveValue="1" subId="12" title="angle of elementary spring" type="0" units="degree" varName="ang" visibility="True">
+        <TitleList>
+         <Title>angle of elementary spring</Title>
+         <Title>angle of elementary spring</Title>
+         <Title>angle of elementary spring</Title>
+         <Title>angle of elementary spring</Title>
+         <Title>angle of elementary spring</Title>
+         <Title>angle of elementary spring</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28399" dimExpression="ns+1" dimension="6" saveValue="1" subId="13" title="compression velocity of elementary spring" type="0" units="rev/s" varName="dang" visibility="True">
+        <TitleList>
+         <Title>compression velocity of elementary spring</Title>
+         <Title>compression velocity of elementary spring</Title>
+         <Title>compression velocity of elementary spring</Title>
+         <Title>compression velocity of elementary spring</Title>
+         <Title>compression velocity of elementary spring</Title>
+         <Title>compression velocity of elementary spring</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28400" dimExpression="ns+1" dimension="6" saveValue="1" subId="14" title="elementary spring force" type="0" units="N" varName="Fk" visibility="True">
+        <TitleList>
+         <Title>elementary spring force</Title>
+         <Title>elementary spring force</Title>
+         <Title>elementary spring force</Title>
+         <Title>elementary spring force</Title>
+         <Title>elementary spring force</Title>
+         <Title>elementary spring force</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28401" dimExpression="ns+1" dimension="6" saveValue="1" subId="15" title="sinus of elementary spring angle" type="0" units="null" varName="sinT" visibility="False">
+        <TitleList>
+         <Title>sinus of elementary spring angle</Title>
+         <Title>sinus of elementary spring angle</Title>
+         <Title>sinus of elementary spring angle</Title>
+         <Title>sinus of elementary spring angle</Title>
+         <Title>sinus of elementary spring angle</Title>
+         <Title>sinus of elementary spring angle</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28402" dimExpression="ns+1" dimension="6" saveValue="1" subId="16" title="cosinus of elementary spring angle" type="0" units="null" varName="cosT" visibility="False">
+        <TitleList>
+         <Title>cosinus of elementary spring angle</Title>
+         <Title>cosinus of elementary spring angle</Title>
+         <Title>cosinus of elementary spring angle</Title>
+         <Title>cosinus of elementary spring angle</Title>
+         <Title>cosinus of elementary spring angle</Title>
+         <Title>cosinus of elementary spring angle</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28403" defValue="0" dimExpression="(ns+1)*(nstage+1)" dimension="24" maxValue="0" minValue="0" saveValue="1" subId="110" title="unload length of elementary springs" type="10" units="degree" varName="L0" visibility="False">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+         <Title>unload length of elementary springs</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28404" defValue="0" dimExpression="nstage+1" dimension="4" maxValue="0" minValue="0" saveValue="1" subId="20" title="elementary stiffness for each spring" type="10" units="N/m" unplottable="1" varName="ki" visibility="False">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>elementary stiffness for each spring</Title>
+         <Title>elementary stiffness for each spring</Title>
+         <Title>elementary stiffness for each spring</Title>
+         <Title>elementary stiffness for each spring</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28405" defValue="0" dimExpression="nstage+1" dimension="4" maxValue="0" minValue="0" saveValue="1" subId="21" title="elementary damping for each spring" type="10" units="N/(m/s)" unplottable="1" varName="hi" visibility="False">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>elementary damping for each spring</Title>
+         <Title>elementary damping for each spring</Title>
+         <Title>elementary damping for each spring</Title>
+         <Title>elementary damping for each spring</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28406" defValue="0" dimExpression="nstage" dimension="3" maxValue="0" minValue="0" saveValue="1" subId="23" title="contact2" type="10" units="null" varName="contact2" visibility="False">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>contact2</Title>
+         <Title>contact2</Title>
+         <Title>contact2</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28407" defValue="0" dimExpression="(ns+1)*(nstage+1)" dimension="24" maxValue="0" minValue="0" saveValue="1" subId="24" title="Kact" type="10" units="null" varName="Kact" visibility="False">
+        <RValues>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+         <Value>0</Value>
+        </RValues>
+        <TitleList>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+         <Title>Kact</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28408" dimension="1" saveValue="1" subId="65" title="powCtot" type="0" units="W" varName="totalCpower" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28409" dimension="1" saveValue="1" subId="67" title="powRtot" type="0" units="W" varName="totalRpower" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28410" dimension="1" saveValue="1" subId="68" title="powItot" type="0" units="W" varName="totalIpower" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="global" actType="2" circuitScopeId="28411" dimension="1" physDomain="2" physType="1" saveValue="0" subId="70" title="power of mechanical dissipation (global)" type="9" units="W" unplottable="1" varName="powerRglobal" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="global" actType="3" circuitScopeId="28412" defValue="0" dimension="1" groupSize="0" maxValue="1e+30" minValue="-1e+30" physDomain="2" physType="1" saveValue="0" subId="72" title="energy of mechanical dissipation (global)" type="1" units="J" unplottable="1" value="0" varName="energyRglobal" varName2="denergyRglobal" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="global" actType="1" circuitScopeId="28413" defValue="0" dimension="1" groupSize="0" maxValue="1e+30" minValue="-1e+30" physDomain="2" physType="1" saveValue="0" subId="78" title="activity of mechanical dissipation (global)" type="1" units="J" unplottable="1" value="0" varName="actRglobal" varName2="dactRglobal" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="spring" actType="2" circuitScopeId="28414" dimension="1" physDomain="2" physType="2" saveValue="0" subId="81" title="power of mechanical capacitance (spring)" type="9" units="W" unplottable="1" varName="powerCspring" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="spring" actType="3" circuitScopeId="28415" defValue="0" dimension="1" groupSize="0" maxValue="1e+30" minValue="-1e+30" physDomain="2" physType="2" saveValue="0" subId="82" title="energy of mechanical capacitance (spring)" type="1" units="J" unplottable="1" value="0" varName="energyCspring" varName2="denergyCspring" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="spring" actType="1" circuitScopeId="28416" defValue="0" dimension="1" groupSize="0" maxValue="1e+30" minValue="-1e+30" physDomain="2" physType="2" saveValue="0" subId="83" title="activity of mechanical capacitance (spring)" type="1" units="J" unplottable="1" value="0" varName="actCspring" varName2="dactCspring" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="mass" actType="2" circuitScopeId="28417" dimension="1" physDomain="2" physType="3" saveValue="0" subId="84" title="power of mechanical inertia (mass)" type="9" units="W" unplottable="1" varName="powerImass" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="mass" actType="3" circuitScopeId="28418" defValue="0" dimension="1" groupSize="0" maxValue="1e+30" minValue="-1e+30" physDomain="2" physType="3" saveValue="0" subId="88" title="energy of mechanical inertia (mass)" type="1" units="J" unplottable="1" value="0" varName="energyImass" varName2="denergyImass" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var actSuffix="mass" actType="1" circuitScopeId="28419" defValue="0" dimension="1" groupSize="0" maxValue="1e+30" minValue="-1e+30" physDomain="2" physType="3" saveValue="0" subId="86" title="activity of mechanical inertia (mass)" type="1" units="J" unplottable="1" value="0" varName="actImass" varName2="dactImass" visibility="True">
+        <LaData>
+         <Data laStatus="3"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28420" defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="94" title="angular position of flywheel first endstop" type="10" units="degree" value="0" varName="thetafly1" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28421" defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="95" title="angular position of flywheel second endstop" type="10" units="degree" value="0" varName="thetaflyn" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28422" dimension="1" saveValue="1" subId="100" title="angular position of flange first endstop" type="0" units="degree" varName="thetaflange1" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28423" dimension="1" saveValue="1" subId="101" title="angular position of flange second endstop" type="0" units="degree" varName="thetaflangen" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28424" dimension="1" saveValue="1" subId="108" title="maximum position of first endstop between flywheel and flange" type="0" units="degree" varName="thetamax1" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28425" dimension="1" saveValue="1" subId="107" title="minimum position of last endstop between flywheel and flange" type="0" units="degree" varName="thetaminn" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28426" defValue="0" dimension="1" maxValue="2" minValue="0" saveValue="1" subId="105" title="contact state of first spring of stage 1" type="10" units="null" value="0" varName="contactE1" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28427" defValue="0" dimension="1" maxValue="2" minValue="0" saveValue="1" subId="106" title="contact state of last spring of stage 1" type="10" units="null" value="0" varName="contactEn" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28428" dimExpression="nstage+1" dimension="4" saveValue="1" subId="109" title="length of stage" type="0" units="degree" varName="Lspring" visibility="False">
+        <TitleList>
+         <Title>length of stage</Title>
+         <Title>length of stage</Title>
+         <Title>length of stage</Title>
+         <Title>length of stage</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="28429" dimExpression="ns" dimension="5" nbInGroup="frictionmodel==4" saveValue="1" subId="127" title="tnext" type="0" units="null" unplottable="1" varName="tnext" visibility="True">
+        <TitleList>
+         <Title>tnext</Title>
+         <Title>tnext</Title>
+         <Title>tnext</Title>
+         <Title>tnext</Title>
+         <Title>tnext</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
+     <ExtVars>
+      <Port tag="rshaft">
+       <Vars>
+        <Var circuitScopeId="28430" dimension="1" io="2" saveValue="1" subId="1" title="torque at port 1" type="0" units="Nm" varName="T1" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var circuitScopeId="28431" dimension="1" io="1" saveValue="1" subId="2" title="angular velocity at port 1" type="0" units="rev/min" varName="w1" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="rshaft">
+       <Vars>
+        <Var circuitScopeId="28432" dimension="1" io="2" saveValue="1" subId="3" title="torque at port 2" type="0" units="Nm" varName="T2" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var circuitScopeId="28433" dimension="1" io="1" saveValue="1" subId="4" title="angular velocity at port 2" type="0" units="rev/min" varName="w2" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+     <EmbeddedTools>
+      <Tool defaultActionModes="0" edition="ILApp $AME/libtr/utils/TRDMF0A_app/TRDMF0A.app" name="DMF configuration tool"/>
+     </EmbeddedTools>
+    </Submodel>
+   </Comp>
+  </Comps>
+  <Lines>
+   <Line alias="h2port_3" circuitScopeId="915" endEntity="4" endPort="1" endType="0" labelVisible="0" startEntity="3" startPort="1" startType="0" type="2">
+    <pos configured="0" direction="0" x="0" y="0"/>
+    <Points>
+     <Point x="524" y="201"/>
+     <Point x="574" y="201"/>
+     <Point x="574" y="324"/>
+     <Point x="206" y="324"/>
+     <Point x="206" y="216"/>
+    </Points>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" idMax="3" label="Direct connection" name="DIRECT" needsUpdateCheck="1" outputType="1" type="0" unit="0">
+     <ParamsGroups>
+      <Group circuitScopeId="28441" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="3"/>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="undefined">
+       <Vars>
+        <Var circuitScopeId="28337" dimension="1" io="2" saveValue="1" subId="1" title="input to junction" type="0" units="null" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="undefined">
+       <Vars>
+        <Var circuitScopeId="28338" dimension="1" io="1" saveValue="1" subId="2" title="input signal at port 2" type="0" units="null" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Line>
+  </Lines>
+  <Texts>
+   <Text html="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;meta charset=&quot;utf-8&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;hr { height: 1px; border-width: 0; }&#xa;li.unchecked::marker { content: &quot;\2610&quot;; }&#xa;li.checked::marker { content: &quot;\2612&quot;; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg'; font-size:11pt; font-weight:600; color:#000000;&quot;>Flange&lt;/span>&lt;/p>&lt;/body>&lt;/html>" orientation="0">
+    <pos x="430" y="220"/>
+   </Text>
+   <Text html="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;meta charset=&quot;utf-8&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;hr { height: 1px; border-width: 0; }&#xa;li.unchecked::marker { content: &quot;\2610&quot;; }&#xa;li.checked::marker { content: &quot;\2612&quot;; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg'; font-size:11pt; font-weight:600; color:#000000;&quot;>Primary &lt;/span>&lt;/p>&#xa;&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg'; font-size:11pt; font-weight:600; color:#000000;&quot;>wheel&lt;/span>&lt;/p>&lt;/body>&lt;/html>" orientation="0">
+    <pos x="232" y="215"/>
+   </Text>
+   <Text html="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;meta charset=&quot;utf-8&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;hr { height: 1px; border-width: 0; }&#xa;li.unchecked::marker { content: &quot;\2610&quot;; }&#xa;li.checked::marker { content: &quot;\2612&quot;; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg'; font-size:8pt; color:#000000;&quot;>mean velocity&lt;/span>&lt;/p>&lt;/body>&lt;/html>" orientation="0">
+    <pos x="101" y="161"/>
+   </Text>
+   <Text html="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;meta charset=&quot;utf-8&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;hr { height: 1px; border-width: 0; }&#xa;li.unchecked::marker { content: &quot;\2610&quot;; }&#xa;li.checked::marker { content: &quot;\2612&quot;; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg'; font-size:8pt; color:#000000;&quot;>relative velocity&lt;/span>&lt;/p>&lt;/body>&lt;/html>" orientation="0">
+    <pos x="189" y="71"/>
+   </Text>
+   <Text html="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;meta charset=&quot;utf-8&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;hr { height: 1px; border-width: 0; }&#xa;li.unchecked::marker { content: &quot;\2610&quot;; }&#xa;li.checked::marker { content: &quot;\2612&quot;; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:600; color:#006487;&quot;>Dual mass flywheel&lt;/span>&lt;/p>&lt;/body>&lt;/html>" orientation="0">
+    <pos x="27" y="20"/>
+   </Text>
+  </Texts>
+  <laTimesList>
+   <laTime>0</laTime>
+  </laTimesList>
+  <animationProperties loop="0" speed="1"/>
+  <globalParams>
+   <Param defValue="" exposed="0" maxValue="" minValue="" paramId="" paramName="vel" title="mean velocity" type="Real" units="rev/min" value="4000"/>
+   <Param defValue="" exposed="0" maxValue="" minValue="" paramId="" paramName="H" title="excitation harmonic" type="Real" units="null" value="0.01"/>
+  </globalParams>
+ </Circuit>
+ <CircuitExtensions>
+  <compCrossList>
+   <compoundVar defDatasetName="ref" expression="m@DMF/5*(w2@DMF*pi/30)**2*rad/1000/1000" name="Fcent" sampleVar="ame_simulation_time" title="Centrifugal force" unit=""/>
+   <compoundVar defDatasetName="ref" expression="-L" name="mL" sampleVar="ame_simulation_time" title="mL" unit=""/>
+   <compoundVar defDatasetName="ref" expression="theta_1@DMF" name="theta1" sampleVar="ame_simulation_time" title="theta1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="theta_2@DMF" name="theta2" sampleVar="ame_simulation_time" title="theta2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="theta_3@DMF" name="theta3" sampleVar="ame_simulation_time" title="theta3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin((360/nsprings@DMF-thetaG2@DMF)/2*pi/180)*rad" name="Lf" sampleVar="ame_simulation_time" title="Lf" unit=""/>
+   <compoundVar defDatasetName="ref" expression="theta_4@DMF" name="theta4" sampleVar="ame_simulation_time" title="theta4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="theta_5@DMF" name="theta5" sampleVar="ame_simulation_time" title="theta5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="m@DMF" name="A1" sampleVar="ame_simulation_time" title="A1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="w2@DMF" name="A2" sampleVar="ame_simulation_time" title="A2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="-flangeAngle@DMF" name="angle" sampleVar="ame_simulation_time" title="relative angle" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin((360/nsprings@DMF-thetaG1@DMF)/2*pi/180)*rad" name="L" sampleVar="ame_simulation_time" title="L" unit=""/>
+   <compoundVar defDatasetName="ref" expression="L*2" name="2L" sampleVar="ame_simulation_time" title="2L" unit=""/>
+   <compoundVar defDatasetName="ref" expression="flangeAngle@DMF" name="FLangle" sampleVar="ame_simulation_time" title="FLangle" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin(theta1*pi/180+pi)" name="sin1" sampleVar="ame_simulation_time" title="sin1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin(theta2*pi/180+pi)" name="sin2" sampleVar="ame_simulation_time" title="sin2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin(theta3*pi/180+pi)" name="sin3" sampleVar="ame_simulation_time" title="sin3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin(theta4*pi/180+pi)" name="sin4" sampleVar="ame_simulation_time" title="sin4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="sin(theta5*pi/180+pi)" name="sin5" sampleVar="ame_simulation_time" title="sin5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="r@DMF+20" name="Re" sampleVar="ame_simulation_time" title="Re" unit=""/>
+   <compoundVar defDatasetName="ref" expression="r@DMF+10" name="Ri" sampleVar="ame_simulation_time" title="Ri" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*cos1" name="X1" sampleVar="ame_simulation_time" title="X1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*cos2" name="X2" sampleVar="ame_simulation_time" title="X2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*cos3" name="X3" sampleVar="ame_simulation_time" title="X3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*cos4" name="X4" sampleVar="ame_simulation_time" title="X4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*cos5" name="X5" sampleVar="ame_simulation_time" title="X5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="-Lf" name="mLf" sampleVar="ame_simulation_time" title="mLf" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*sin1" name="Y1" sampleVar="ame_simulation_time" title="Y1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*sin2" name="Y2" sampleVar="ame_simulation_time" title="Y2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*sin3" name="Y3" sampleVar="ame_simulation_time" title="Y3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*sin4" name="Y4" sampleVar="ame_simulation_time" title="Y4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="rad*sin5" name="Y5" sampleVar="ame_simulation_time" title="Y5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="cos(theta1*pi/180+pi)" name="cos1" sampleVar="ame_simulation_time" title="cos1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="cos(theta2*pi/180+pi)" name="cos2" sampleVar="ame_simulation_time" title="cos2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="cos(theta3*pi/180+pi)" name="cos3" sampleVar="ame_simulation_time" title="cos3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="Fn_1@DMF/20" name="Fn1" sampleVar="ame_simulation_time" title="Fn1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="cos(theta4*pi/180+pi)" name="cos4" sampleVar="ame_simulation_time" title="cos4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="Fn_2@DMF/20" name="Fn2" sampleVar="ame_simulation_time" title="Fn2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="cos(theta5*pi/180+pi)" name="cos5" sampleVar="ame_simulation_time" title="cos5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="Fn_3@DMF/20" name="Fn3" sampleVar="ame_simulation_time" title="Fn3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="Fn_4@DMF/20" name="Fn4" sampleVar="ame_simulation_time" title="Fn4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="Fn_5@DMF/20" name="Fn5" sampleVar="ame_simulation_time" title="Fn5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="ang_1@DMF*pi/180*rad" name="L0" sampleVar="ame_simulation_time" title="L0" unit=""/>
+   <compoundVar defDatasetName="ref" expression="m@DMF/5*(w2@DMF*pi/30)**2*rad/1000/10000/2" name="Fctr" sampleVar="ame_simulation_time" title="Fctr" unit=""/>
+   <compoundVar defDatasetName="ref" expression="ang_2@DMF*pi/180*rad" name="L1" sampleVar="ame_simulation_time" title="L1" unit=""/>
+   <compoundVar defDatasetName="ref" expression="ang_3@DMF*pi/180*rad" name="L2" sampleVar="ame_simulation_time" title="L2" unit=""/>
+   <compoundVar defDatasetName="ref" expression="ang_4@DMF*pi/180*rad" name="L3" sampleVar="ame_simulation_time" title="L3" unit=""/>
+   <compoundVar defDatasetName="ref" expression="ang_5@DMF*pi/180*rad" name="L4" sampleVar="ame_simulation_time" title="L4" unit=""/>
+   <compoundVar defDatasetName="ref" expression="Lf*2" name="2Lf" sampleVar="ame_simulation_time" title="2Lf" unit=""/>
+   <compoundVar defDatasetName="ref" expression="ang_6@DMF*pi/180*rad" name="L5" sampleVar="ame_simulation_time" title="L5" unit=""/>
+   <compoundVar defDatasetName="ref" expression="r@DMF" name="rad" sampleVar="ame_simulation_time" title="rad" unit=""/>
+  </compCrossList>
+  <StickerDefinitions>
+   <Sticker color="880015ff" isFactory="1" label="sticker 1" name="High importance"/>
+   <Sticker color="ed1c24ff" isFactory="1" label="sticker 2" name="Low confidence"/>
+   <Sticker color="ff7f27ff" isFactory="1" label="sticker 3" name="Follow-up"/>
+   <Sticker color="fff200ff" isFactory="1" label="sticker 4" name="From specification"/>
+   <Sticker color="b5e61dff" isFactory="1" label="sticker 5" name="From literature"/>
+   <Sticker color="22b14cff" isFactory="1" label="sticker 6" name="From experiment"/>
+   <Sticker color="99d9eaff" isFactory="1" label="sticker 7" name="From CAD"/>
+  </StickerDefinitions>
+  <modelExplorerFilters>
+   <Filters>
+    <Filter showComponentsWithoutParams="1"/>
+    <Filter showComponentsWithAllDefaultParams="1"/>
+    <Filter showComponentsWithNonDefaultParams="1"/>
+    <Filter showComponentsWithNoAssignedParameterSet="1"/>
+    <Filter showComponentsWithAssignedAndFullySyncParameterSet="1"/>
+    <Filter showComponentsWithAssignedAndPartiallySyncParameterSet="1"/>
+    <Filter showComponentsWithAssignedButMissingParameterSet="1"/>
+   </Filters>
+   <Nodes>
+    <Node compExpanded="1"/>
+    <Node parVarExpanded="1"/>
+   </Nodes>
+  </modelExplorerFilters>
+  <RunParameterOptions>
+   <Option printIntervalAltOption="0"/>
+  </RunParameterOptions>
+  <simuSettings export_csv="0"/>
+  <saveStrategyOptions otherVariables="1" variablesInSc="1" watchVariables="1"/>
+  <overlayConfiguration>
+   <osrColor autoscale="1" colormap_name="stream" title="pressure" unit_name="bar"/>
+   <osrGlyph autoscale="1" title="flow rate" unit_name="L/min"/>
+   <osrOption option_color="1" option_glyph="0" option_gray_inactives="1" option_gray_inactives_value="0.5"/>
+   <osrData dataset=""/>
+   <osrScene alias="root" colorscale_corner="1"/>
+  </overlayConfiguration>
+ </CircuitExtensions>
+</CIR>

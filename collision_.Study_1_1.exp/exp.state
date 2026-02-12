@@ -1,0 +1,3 @@
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Data_Path=w@component_1.rotaryload2ports_1
+RSPR00 instance 1 angular twist in spring [degree] Data_Path=theta@rotaryspring

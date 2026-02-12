@@ -1,0 +1,95 @@
+#
+# Simcenter Amesim system make file
+#
+
+
+# This makefile has been created using the following cathegory path list
+#	$AME/libame
+#	$AME
+#	$AME/libsig
+#	$AME/libmec
+#	$AME/libdrv
+#	$AME/libeng
+#	$AME/libcfd1d
+#	$AME/libexh
+#	$AME/libhydr
+#	$AME/libhcd
+#	$AME/libhr
+#	$AME/libfi
+#	$AME/libth
+#	$AME/libthh
+#	$AME/libthcd
+#	$AME/libcs
+#	$AME/libtpf
+#	$AME/libac
+#	$AME/libheat
+#	$AME/libpn
+#	$AME/libpcd
+#	$AME/libgm
+#	$AME/libma
+#	$AME/libec
+#	$AME/libfc
+#	$AME/libtr
+#	$AME/libm6dof
+#	$AME/libplm
+#	$AME/libdv
+#	$AME/libicar
+#	$AME/libcf
+#	$AME/libem
+#	$AME/libesc
+#	$AME/libeb
+#	$AME/libemd
+#	$AME/libae
+#	$AME/libesg
+#	$AME/libess
+#	$AME/libfl
+#	$AME/libflcd
+#	$AME/libh2
+#	$AME/libflst
+#	$AME/libaero
+#	$AME/libace
+#	$AME/libgte
+#	$AME/liblp
+#	$AME/libacf
+#	$AME/libmotion
+# End category path list
+# The MACHINETYPE variable can be used in -L statements
+# or otherwise to separate machine dependent code
+
+MACHINETYPE = win64-gcc
+
+# Then the object files
+OBJECTS = \
+	D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/RSPR00.o \
+	D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/TORQC.o \
+	D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/T000.o \
+	D:/Amesim/V2604/v2604_1/Amesim/libsig/submodels/win64-gcc/SIGUDA01.o \
+	D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/MECRL0.o
+
+OBJECTS2 = \
+	"D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/RSPR00.o" \
+	"D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/TORQC.o" \
+	"D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/T000.o" \
+	"D:/Amesim/V2604/v2604_1/Amesim/libsig/submodels/win64-gcc/SIGUDA01.o" \
+	"D:/Amesim/V2604/v2604_1/Amesim/libmec/submodels/win64-gcc/MECRL0.o"
+
+collision_.dll: $(OBJECTS) collision_.o
+	"$(AME)\interfaces\standalonesimulator\win32\stdsim_dynlink" win64 $(CC) -m64 $(LDFLAGS) -o collision_.dll collision_.o $(OBJECTS2) \
+	-L"D:/Amesim/V2604/v2604_1/Amesim/libsig/lib/$(MACHINETYPE)" -lSIG -L"D:/Amesim/V2604/v2604_1/Amesim/libmec/lib/$(MACHINETYPE)" -lMEC -L"D:/Amesim/V2604/v2604_1/Amesim/libdrv/lib/$(MACHINETYPE)" -lDRV -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libeng/lib/$(MACHINETYPE)" -lENG -L"D:/Amesim/V2604/v2604_1/Amesim/libcfd1d/lib/$(MACHINETYPE)" -lCFD1D -lpthread -L"$(AME)/libpn/lib/$(MACHINETYPE)" -lPN -L"$(AME)/libeng/lib/$(MACHINETYPE)" -lENG -L"$(AME)/libexh/lib/$(MACHINETYPE)" -lEXH -L"$(AME)/libhydr/lib/$(MACHINETYPE)" -lHYDR -L"$(AME)/libthh/lib/$(MACHINETYPE)" -lTHH -lstdc++ -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libexh/lib/$(MACHINETYPE)" -lEXH -L"D:/Amesim/V2604/v2604_1/Amesim/libhydr/lib/$(MACHINETYPE)" -lHYDR -L"D:/Amesim/V2604/v2604_1/Amesim/libhcd/lib/$(MACHINETYPE)" -lHCD -L"$(AME)/libhydr/lib/$(MACHINETYPE)" -lHYDR -L"D:/Amesim/V2604/v2604_1/Amesim/libhr/lib/$(MACHINETYPE)" -lHR -L"$(AME)/libhydr/lib/$(MACHINETYPE)" -lHYDR -L"D:/Amesim/V2604/v2604_1/Amesim/libfi/lib/$(MACHINETYPE)" -lFI -L"$(AME)/libhydr/lib/$(MACHINETYPE)" -lHYDR -L"D:/Amesim/V2604/v2604_1/Amesim/libth/lib/$(MACHINETYPE)" -lTH -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"$(AME)/libcfd1d/lib/$(MACHINETYPE)" -lCFD1D $(MINGW_LIB) -lpthread -L"$(AME)/libpn/lib/$(MACHINETYPE)" -lPN -L"$(AME)/libeng/lib/$(MACHINETYPE)" -lENG -L"$(AME)/libexh/lib/$(MACHINETYPE)" -lEXH -L"$(AME)/libhydr/lib/$(MACHINETYPE)" -lHYDR -L"D:/Amesim/V2604/v2604_1/Amesim/libthh/lib/$(MACHINETYPE)" -lTHH -lstdc++ -L"D:/Amesim/V2604/v2604_1/Amesim/libthcd/lib/$(MACHINETYPE)" -lTHCD -L"$(AME)/libthh/lib/$(MACHINETYPE)" -lTHH -L"D:/Amesim/V2604/v2604_1/Amesim/libcs/lib/$(MACHINETYPE)" -lCS -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libtpf/lib/$(MACHINETYPE)" -lTPF -L"D:/Amesim/V2604/v2604_1/Amesim/libac/lib/$(MACHINETYPE)" -lAC -L"$(AME)/libtpf/lib/$(MACHINETYPE)" -lTPF -L"$(AME)/libma/lib/$(MACHINETYPE)" -lMA -L"$(AME)/libthh/lib/$(MACHINETYPE)" -lTHH -L"$(AME)/libgm/lib/$(MACHINETYPE)" -lGM -L"D:/Amesim/V2604/v2604_1/Amesim/libheat/lib/$(MACHINETYPE)" -lHEAT -L"$(AME)/libpn/lib/$(MACHINETYPE)" -lPN -L"$(AME)/libthh/lib/$(MACHINETYPE)" -lTHH -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"$(AME)/libtpf/lib/$(MACHINETYPE)" -lTPF  -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libpn/lib/$(MACHINETYPE)" -lPN -L"D:/Amesim/V2604/v2604_1/Amesim/libpcd/lib/$(MACHINETYPE)" -lPCD -L"$(AME)/libpn/lib/$(MACHINETYPE)" -lPN -L"D:/Amesim/V2604/v2604_1/Amesim/libgm/lib/$(MACHINETYPE)" -lGM -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libma/lib/$(MACHINETYPE)" -lMA -L"$(AME)/libthh/lib/$(MACHINETYPE)" -lTHH -L"$(AME)/libgm/lib/$(MACHINETYPE)" -lGM -L"D:/Amesim/V2604/v2604_1/Amesim/libec/lib/$(MACHINETYPE)" -lEC -L"$(AME)/libgm/lib/$(MACHINETYPE)" -lGM -L"D:/Amesim/V2604/v2604_1/Amesim/libfc/lib/$(MACHINETYPE)" -lFC -L"D:/Amesim/V2604/v2604_1/Amesim/libtr/lib/$(MACHINETYPE)" -lTR -L"$(AME)/libm6dof/lib/$(MACHINETYPE)" -lM6DOF -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC -L"$(AME)/libsig/lib/$(MACHINETYPE)" -lSIG  -L"D:/Amesim/V2604/v2604_1/Amesim/libm6dof/lib/$(MACHINETYPE)" -lM6DOF -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC  -L"D:/Amesim/V2604/v2604_1/Amesim/libplm/lib/$(MACHINETYPE)" -lPLM -L"$(AME)/lib/$(MACHINETYPE)" -lAME2D -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC -L"$(AME)/libicar/lib/$(MACHINETYPE)" -lICAR -L"D:/Amesim/V2604/v2604_1/Amesim/libdv/lib/$(MACHINETYPE)" -lDV -L"$(AME)/libm6dof/lib/$(MACHINETYPE)" -lM6DOF -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC -L"$(AME)/libsig/lib/$(MACHINETYPE)" -lSIG -L"$(AME)/lib/utils/lib/$(MACHINETYPE)" -l"OASES_$(MACHINETYPE)" -L"D:/Amesim/V2604/v2604_1/Amesim/libicar/lib/$(MACHINETYPE)" -lICAR -L"D:/Amesim/V2604/v2604_1/Amesim/libcf/lib/$(MACHINETYPE)" -lCF -L"D:/Amesim/V2604/v2604_1/Amesim/libem/lib/$(MACHINETYPE)" -lEM $(FLUX_MP_LIB) -L"D:/Amesim/V2604/v2604_1/Amesim/libesc/lib/$(MACHINETYPE)" -lESC -L"D:/Amesim/V2604/v2604_1/Amesim/libeb/lib/$(MACHINETYPE)" -lEB -L"D:/Amesim/V2604/v2604_1/Amesim/libemd/lib/$(MACHINETYPE)" -lEMD $(FLUX_MP_LIB) -L"$(AME)/libemd/lib/$(MACHINETYPE)" -lEMD -L"D:/Amesim/V2604/v2604_1/Amesim/libae/lib/$(MACHINETYPE)" -lAE -L"D:/Amesim/V2604/v2604_1/Amesim/libesg/lib/$(MACHINETYPE)" -lESG -L"D:/Amesim/V2604/v2604_1/Amesim/libess/lib/$(MACHINETYPE)" -lESS -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libfl/lib/$(MACHINETYPE)" -lFL -L"D:/Amesim/V2604/v2604_1/Amesim/libflcd/lib/$(MACHINETYPE)" -lFLCD -L"$(AME)/libfl/lib/$(MACHINETYPE)" -lFL -L"$(AME)/libfl/lib/$(MACHINETYPE)" -lFL -L"D:/Amesim/V2604/v2604_1/Amesim/libh2/lib/$(MACHINETYPE)" -lH2 -L"D:/Amesim/V2604/v2604_1/Amesim/libflst/lib/$(MACHINETYPE)" -lFLST -L"$(AME)/libfl/lib/$(MACHINETYPE)" -lFL  -L"D:/Amesim/V2604/v2604_1/Amesim/libaero/lib/$(MACHINETYPE)" -lAERO -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC  -L"D:/Amesim/V2604/v2604_1/Amesim/libace/lib/$(MACHINETYPE)" -lACE -L"$(AME)/libth/lib/$(MACHINETYPE)" -lTH -L"D:/Amesim/V2604/v2604_1/Amesim/libgte/lib/$(MACHINETYPE)" -lGTE -L"D:/Amesim/V2604/v2604_1/Amesim/liblp/lib/$(MACHINETYPE)" -lLP -L"$(AME)/libtpf/lib/$(MACHINETYPE)" -lTPF -L"D:/Amesim/V2604/v2604_1/Amesim/libacf/lib/$(MACHINETYPE)" -lACF -L"$(AME)/libpn/lib/$(MACHINETYPE)" -lPN -L"$(AME)/libthh/lib/$(MACHINETYPE)" -lTHH -L"$(AME)/libgm/lib/$(MACHINETYPE)" -lGM -L"$(AME)/libm6dof/lib/$(MACHINETYPE)" -lM6DOF -L"$(AME)/libmec/lib/$(MACHINETYPE)" -lMEC  -L"D:/Amesim/V2604/v2604_1/Amesim/libmotion/lib/$(MACHINETYPE)" -lAMEMOTION  \
+	$(AMELIBS)
+
+collision_.o: collision_.c
+	"$(AME)\interfaces\user_cosim\win32\ame_user_cosim_dyncompile" $(CC) -m64 -c -I"$(AME)\interfaces\user_cosim" -I"$(AME)\interfaces\standalonesimulator" -I"$(AME)\interfaces" $(CFLAGS) -o collision_.o collision_.c
+
+.c.o:
+	@echo
+	@echo "Warning: \"$<\" is newer than the object."
+	@echo ""
+
+.f.o:
+	@echo
+	@echo "Warning: \"$<\" is newer than the object."
+	@echo ""
+
+# End of file
+

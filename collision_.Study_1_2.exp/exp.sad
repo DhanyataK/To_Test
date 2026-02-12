@@ -1,0 +1,19 @@
+#############################################################
+#                                                           #
+#  This is a configuration file for sensitivity analysis    #
+#                                                           #
+#############################################################
+DTYPE=set
+NPARS=2
+NSETS=1
+
+PIDNO=
+DEPRECATED DEPRECATED DEPRECATED J@rotaryload2ports DEPRECATED
+DEPRECATED DEPRECATED DEPRECATED k@rotaryspring DEPRECATED
+
+PDATA=
+0.17
+1000
+
+VALRU=
+1

@@ -1,0 +1,19 @@
+MECRL0 instance 2 sign reversed duplicate of shaft speed at port 2 [rev/min] Data_Path=wdup@component_1_1.rotaryload2ports
+RSPR00 instance 1 torque applied to shaft 1 [Nm] Data_Path=torq1@rotaryspring
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Data_Path=w@component_1_rotaryload2ports_1
+RSPR00 instance 1 torque applied to shaft 2 [Nm] Data_Path=torq2@rotaryspring
+RSPR00 instance 1 angular twist in spring [degree] Data_Path=theta@rotaryspring
+HIDDEN
+SIGUDA01 instance 1 output signal Data_Path=u@dynamic_time_table
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Data_Path=w@component_1_1.rotaryload2ports
+TORQC instance 1 torque output [Nm] Data_Path=torque@torquecon
+MECRL0 instance 1 sign reversed duplicate of shaft speed at port 2 [rev/min] Data_Path=wdup@component_1_rotaryload2ports_1
+T000 instance 1 torque (always zero) [Nm] Data_Path=tzero@zerotorquesource
+MECRL0 instance 1 rotary acceleration [rad/s/s] Data_Path=accel@component_1_rotaryload2ports_1
+MECRL0 instance 1 viscous friction torque [Nm] Data_Path=Tvisc@component_1_rotaryload2ports_1
+HIDDEN
+HIDDEN
+MECRL0 instance 2 rotary acceleration [rad/s/s] Data_Path=accel@component_1_1.rotaryload2ports
+MECRL0 instance 2 viscous friction torque [Nm] Data_Path=Tvisc@component_1_1.rotaryload2ports
+HIDDEN
+HIDDEN

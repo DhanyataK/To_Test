@@ -1,0 +1,30 @@
+RSPR00 instance 1 spring stiffness [Nm/degree] Is_Delta=0 Param_Id=2448 Recompile_Flag=0 Data_Path=k@rotaryspring
+RSPR00 instance 1 angular twist in spring [degree] Param_Id=2449 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=theta@rotaryspring
+T000 instance 1 torque (always zero) [Nm] Param_Id=2459 Recompile_Flag=0 Data_Path=tzero@zerotorquesource
+SIGUDA01 instance 1 slope for x < xmin [null] Is_Delta=0 Param_Id=2390 Recompile_Flag=0 Data_Path=xminslope@dynamic_time_table
+SIGUDA01 instance 1 slope for x > xmax [null] Is_Delta=0 Param_Id=2391 Recompile_Flag=0 Data_Path=xmaxslope@dynamic_time_table
+SIGUDA01 instance 1 interpolation type Param_Id=2392 Recompile_Flag=0 Data_Path=spline@dynamic_time_table
+SIGUDA01 instance 1 linear data out of range mode Param_Id=2393 Recompile_Flag=0 Data_Path=lmode@dynamic_time_table
+SIGUDA01 instance 1 discontinuity handling Param_Id=2394 Recompile_Flag=0 Data_Path=disc@dynamic_time_table
+SIGUDA01 instance 1 boundary conditions Param_Id=2395 Recompile_Flag=0 Data_Path=bcond@dynamic_time_table
+SIGUDA01 instance 1 cubic data out of range mode Param_Id=2396 Recompile_Flag=0 Data_Path=cmode@dynamic_time_table
+SIGUDA01 instance 1 output value Param_Id=2397 Recompile_Flag=0 Data_Path=outputtype@dynamic_time_table
+SIGUDA01 instance 1 column to use for u Param_Id=2398 Recompile_Flag=0 Data_Path=ucol@dynamic_time_table
+SIGUDA01 instance 1 stairs data out of range mode Param_Id=2399 Recompile_Flag=0 Data_Path=smode@dynamic_time_table
+SIGUDA01 instance 1 initialization method Param_Id=2400 Recompile_Flag=0 Data_Path=initMethod@dynamic_time_table
+SIGUDA01 instance 1 column to use for time Param_Id=2401 Recompile_Flag=0 Data_Path=tcol@dynamic_time_table
+SIGUDA01 instance 1 name of ASCII file Param_Id=2402 Recompile_Flag=0 Data_Path=filename@dynamic_time_table
+MECRL0 instance 1 moment of inertia [kgm**2] Is_Delta=0 Param_Id=2406 Recompile_Flag=0 Data_Path=J@rotaryload2ports
+MECRL0 instance 1 coefficient of viscous friction [Nm/(rev/min)] Is_Delta=0 Param_Id=2407 Recompile_Flag=0 Data_Path=vis@rotaryload2ports
+MECRL0 instance 1 Coulomb friction torque [Nm] Is_Delta=0 Param_Id=2408 Recompile_Flag=0 Data_Path=coul@rotaryload2ports
+MECRL0 instance 1 stiction torque [Nm] Is_Delta=0 Param_Id=2409 Recompile_Flag=0 Data_Path=stict@rotaryload2ports
+MECRL0 instance 1 coefficient of windage [Nm/(rev/min)**2] Is_Delta=0 Param_Id=2410 Recompile_Flag=0 Data_Path=wind@rotaryload2ports
+MECRL0 instance 1 use friction Param_Id=2411 Recompile_Flag=0 Data_Path=friction@rotaryload2ports
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Param_Id=2422 Recompile_Flag=0 Data_Path=w@rotaryload2ports
+MECRL0 instance 2 moment of inertia [kgm**2] Is_Delta=0 Param_Id=2427 Recompile_Flag=0 Data_Path=J@component_1_rotaryload2ports_1
+MECRL0 instance 2 coefficient of viscous friction [Nm/(rev/min)] Is_Delta=0 Param_Id=2428 Recompile_Flag=0 Data_Path=vis@component_1_rotaryload2ports_1
+MECRL0 instance 2 Coulomb friction torque [Nm] Is_Delta=0 Param_Id=2429 Recompile_Flag=0 Data_Path=coul@component_1_rotaryload2ports_1
+MECRL0 instance 2 stiction torque [Nm] Is_Delta=0 Param_Id=2430 Recompile_Flag=0 Data_Path=stict@component_1_rotaryload2ports_1
+MECRL0 instance 2 coefficient of windage [Nm/(rev/min)**2] Is_Delta=0 Param_Id=2431 Recompile_Flag=0 Data_Path=wind@component_1_rotaryload2ports_1
+MECRL0 instance 2 use friction Param_Id=2432 Recompile_Flag=0 Data_Path=friction@component_1_rotaryload2ports_1
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Param_Id=2443 Recompile_Flag=0 Data_Path=w@component_1_rotaryload2ports_1

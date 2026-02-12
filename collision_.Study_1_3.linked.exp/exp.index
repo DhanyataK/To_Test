@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE INDEX>
+<INDEX DOC_VERSION="1" VersionId="20261.." date_time="1764050429" description="Experiment created from &quot;Study_1&quot; study." expanded="0" experiment_type="DOE" is_study_experiment="1" list_of_files=".,/>/,..,/>/,exp.amegp,/>/,exp.data,/>/,exp.doe_Study_1,/>/,exp.index,/>/,exp.la,/>/,exp.lock,/>/,exp.param,/>/,exp.pl,/>/,exp.sad,/>/,exp.sim,/>/,exp.ssf,/>/,exp.state,/>/,exp.studyparam,/>/,exp.var,/>/,exp.vl.active,/>/,exp.vl.crc_1115847190,/>/,Study_1.de_res" name="Study_1_3" path="D:/Demo2511/collision_Study_1_11-25-2025_11-30-29am.ameexp" tooltip="">
+ <CIRCUIT name="collision"/>
+</INDEX>
